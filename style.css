@@ -1,0 +1,184 @@
+body {
+
+    font-family: Georgia, serif;
+    margin: 0;
+    padding: 0;
+    color: #222;  
+ 
+
+    /* Set the background image */
+    background-image:url("bg1.jpg"); 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center center;
+}
+
+/*  NAVIGATION BAR */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.9); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.nav-brand {
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #A34045; /* Deep Red/Plum color from the aesthetic */
+    padding: 8px 10px;
+}
+
+
+
+.nav-item {
+    float: right;
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+
+
+.nav-item:hover, .active {
+    color: #C85A5F; /* Lighter red for hover effect */
+}
+
+
+/* MAIN CONTENT CARD  */
+.main-content-wrapper {
+    min-height: calc(100vh - 120px); /* to push footer down */
+    padding: 80px 20px 40px 20px;
+}
+
+.content-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent White Card bg */
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+
+.card-title {
+    color: #A34045; 
+    text-align: center;
+    font-size: 2.5em;
+    border-bottom: 2px solid #E0D0C0; /* line separator styling */
+    padding-bottom: 10px;
+}
+
+
+/* SIDE-BY-SIDE LAYOUT */
+.intro-section {
+    display: flex; 
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.intro-image-area {
+    flex: 1; sssssss
+    text-align: center;
+}
+
+.intro-text-area {
+    flex: 2; 
+}
+
+.intro-text-area h3 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+
+
+
+.profile-img-rounded {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px; /* squared pfp border */
+    object-fit: cover;
+    border: 5px solid #F0C090; /* Warm Gold border */
+    object-position: 50% 40%; /* adjust photo position */
+}
+
+
+/* SKILLS SIDEBAR STYLING */
+.skills-sidebar {
+    margin-top: 25px; /* Space below the profile picture */
+    padding: 12px;
+    background-color: rgba(252, 252, 252, 0.9); 
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid #E0D0C0;
+    border-radius: 8px;
+    text-align: left; 
+    width: 190px;
+}
+
+.skills-sidebar h4 {
+    color: #A34045;
+    text-align: center;
+    border-bottom: 1px dashed #E0D0C0;
+    padding-bottom: 5px;
+    margin-top: 0;
+}
+
+.skills-sidebar ul + h4 {
+    margin-top: 20px;
+}
+
+.key-strengths-list {
+    list-style-type: none; /* Removes the default bullets */
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+
+.key-strengths-list li {
+    padding: 5px 0;
+    line-height: 1.4;
+    font-size: 0.95em;
+    border-bottom: 1px solid #f5cbcb;
+    margin-bottom: 5px;
+}
+
+
+/* CALL TO ACTION */
+.cta-button {
+    display: inline-block;
+    background-color: #C85A5F; /* Cherry blossom red button */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #A34045;
+
+}
+
+/* FOOTER STYLING */
+
+.footer-style {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark transparent overlay for the footer */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+
+}
+
+.highlight-text {
+    color: #fcb786;
+}
