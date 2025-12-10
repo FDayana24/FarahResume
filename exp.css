@@ -1,0 +1,271 @@
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: #2D3436; 
+    
+    background-image: url('bg3.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/* NAVIGATION BAR */
+.main-header, nav-bar {
+    font-family: Georgia, Serif;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px; 
+    overflow: hidden;
+}
+
+.nav-brand {
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #954ae0; 
+    padding: 8px 10px;
+}
+
+.nav-item {
+    float: right;
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 8px 16px; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-item:hover, .active {
+    color: #b071f0; 
+}
+
+
+/* MAIN CONTENT CARD */
+.main-content-wrapper {
+    min-height: calc(100vh - 120px); 
+    padding: 80px 20px 40px 20px;
+}
+
+.content-card {
+    max-width: 900px; 
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.88); 
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    color: #6C5CE7; 
+    text-align: center;
+    font-size: 2.8em; 
+    border-bottom: 2px solid #A29BFE; 
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #0984E3; 
+    border-bottom: 1px solid #A29BFE;
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #6C5CE7; 
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+.separator {
+    border-top: 1px solid #A29BFE;
+    margin: 30px 0;
+}
+
+/* FOOTER STYLING */
+.footer-style {
+    font-family: Georgia, Serif;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    text-align: center;
+    padding: 20px; 
+    font-size: 0.8em; 
+}
+
+.highlight-text {
+    color: #954ae0; 
+}
+
+
+/* Anchor Navigation Bar */
+.anchor-navigation {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px;
+    background-color: rgba(230, 232, 250, 0.8); 
+    border-radius: 8px;
+}
+
+.anchor-link {
+    color: #0984E3; 
+    text-decoration: none;
+    transition: color 0.2s, text-decoration 0.2s;
+    padding: 0 10px;
+}
+
+.anchor-link:hover {
+    color: #6C5CE7; 
+    text-decoration: underline;
+}
+
+/* Ordered List (Experience) */
+.experience-list {
+    list-style-type: decimal; 
+    padding-left: 25px;
+}
+
+.experience-list > li {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 3px solid #6C5CE7; 
+}
+
+.experience-list h3 a {
+    text-decoration: none;
+}
+
+/* Company Logo Section */
+.company-logo {
+    width: 100px; 
+    height: 35px;
+    vertical-align: middle;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.role-details {
+    color: #555;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Unordered List (Duties) */
+.duties-list {
+    list-style-type: square; 
+    color: #444;
+    font-size: 0.95em;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.achievement-list, .project-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.achievement-list li, .project-list li {
+    padding: 8px 0 8px 30px; 
+    position: relative; 
+   
+}
+
+.achievement-list li::before, .project-list li::before {
+    /* Star emoji code: \2B50 */
+    content: "\2B50"; 
+    position: absolute; 
+    left: 0;
+    font-size: 1.2em;
+    color: #FFEAA7; /* Highlight color for the star */
+   
+}
+
+
+/* CUSTOM TABLE */
+.data-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.highlight-table {
+    border: 3px solid #6C5CE7;
+    box-shadow: 0 8px 16px rgba(108, 92, 231, 0.3);
+}
+
+.highlight-table th {
+    background-color: #954ae0;
+}
+
+
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #E0D0C0; 
+}
+
+.data-table th {
+    background-color: #9729e6; /* purple */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.credentials-table tbody tr:hover {
+    background-color: rgba(108, 92, 231, 0.05); 
+}
+
+.table-action {
+    width: 120px; 
+    text-align: center;
+}
+
+
+.view-cert-link {
+    font-size: 0.9em;
+    color: #6C5CE7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+    
+    padding-left: 20px; 
+    position: relative;
+}
+
+.view-cert-link::before {
+    /* Chain Link Emoji Code: \1F517 */
+    content: "\1F517"; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* To center the icon vertically */
+    font-size: 1.1em;
+}
+
+.view-cert-link:hover {
+    color: #0984E3;
+    text-decoration: none;
+}
+
+
+/* Back to Top Link Styling */
+.back-to-top {
+    text-align: right;
+    margin-top: 40px;
+    font-size: 0.9em;
+}

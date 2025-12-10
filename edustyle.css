@@ -1,0 +1,341 @@
+body {
+    font-family: Geramond, Serif;
+    margin: 0;
+    padding: 0;
+    color: #333; 
+    
+    /* Set the new background image */
+    background-image: url('bg4.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/* NAVIGATION BAR */
+.main-header, nav-bar {
+    font-family: Georgia, Serif;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px; 
+    overflow: hidden;
+}
+
+.nav-brand {
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #A34045; 
+    padding: 8px 10px;
+}
+
+.nav-item {
+    float: right;
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 8px 16px; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-item:hover, .active {
+    color: #C85A5F; 
+}
+
+
+/* MAIN CONTENT CARD */
+.main-content-wrapper {
+    min-height: calc(100vh - 120px); 
+    padding: 80px 20px 40px 20px;
+}
+
+.content-card {
+    max-width: 900px; 
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    color: #E76C9B; /* Pink Accent */
+    text-align: center;
+    font-size: 2.8em; 
+    border-bottom: 2px solid #F8B4C0; /* Lighter Pink Border */
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #9B284D; /* Deep Crimson Accent */
+    border-bottom: 1px solid #E76C9B;
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/*  INSTITUTION TITLE (H3) */
+h3 {
+    color: #E76C9B; /* Pink Accent */
+    margin-top: 25px;
+    margin-bottom: 5px;
+    font-size: 1.4em;
+    /* To align logo next to the title text */
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO BESIDE TITLE */
+.institution-logo {
+    /* Ensures the logo is small */
+    height: 2em; 
+    margin-left: 10px;
+    /* Optional: slightly darken the logo wrapper for contrast */
+    padding: 2px; 
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.institution-logo img {
+    /* Ensures the image itself fits the small space */
+    height: 100%;
+    width: auto;
+}
+
+h4.coursework-title {
+    color: #9B284D;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.institution-details {
+    color: #555;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.separator {
+    border-top: 1px solid #F8B4C0;
+    margin: 30px 0;
+}
+
+/* FOOTER STYLING */
+.footer-style {
+    font-family: Georgia, Serif;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    text-align: center;
+    padding: 20px; 
+    font-size: 0.8em; 
+}
+
+.highlight-text {
+    color: #ec84f0; /* pink footer */
+}
+
+
+
+/* Anchor Navigation Bar */
+.anchor-navigation {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding: 10px;
+    background-color: rgba(255, 240, 245, 0.8); /* Very light pink background */
+    border-radius: 8px;
+}
+
+.anchor-link {
+    color: #9B284D; /* Deep Crimson Link */
+    text-decoration: none;
+    transition: color 0.2s, text-decoration 0.2s;
+    padding: 0 10px;
+}
+
+.anchor-link:hover {
+    color: #E76C9B; 
+    text-decoration: underline;
+}
+
+/* Links within content */
+h3 a, .anchor-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s;
+}
+
+h3 a:hover {
+    color: #9B284D;
+    text-decoration: underline;
+}
+
+/* Result link styling */
+.result-link {
+    font-size: 0.9em;
+    color: #9B284D;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.result-link:hover {
+    color: #E76C9B;
+}
+
+
+
+
+/* General Course List (Ordered list) */
+.course-list {
+    list-style-type: decimal; 
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.course-list > li {
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+
+.duties-list {
+    list-style-type: square; 
+    color: #555;
+    font-size: 0.95em;
+    padding-left: 20px;
+    margin-top: 5px;
+    font-weight: normal;
+}
+
+
+.achievement-list, .project-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.achievement-list li, .project-list li {
+    padding: 8px 0 8px 30px; 
+    position: relative; 
+}
+
+.achievement-list li::before, .project-list li::before {
+    /* 🌸 CHERRY BLOSSOM EMOJI: \1F338 */
+    content: "\1F338"; 
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+    color: #E76C9B; /* Pink accent color for the cherry blossom */
+}
+
+/* CUSTOM TABLE FOR ACADEMIC */
+.data-table {
+    width: 100%;
+    border-collapse: collapse; 
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    overflow: hidden; 
+}
+
+.data-table th, .data-table td {
+    padding: 12px 15px;
+    text-align: center; 
+    border-bottom: 1px solid #F5E0E0; 
+}
+
+.data-table th {
+    background-color: #9B284D; /* Deep Crimson Header */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.education-table tbody tr:hover {
+    background-color: rgba(231, 108, 155, 0.08); /* Light pink hover effect */
+}
+
+/* Styling for Superscript and Subscript */
+.superscript {
+    font-size: 0.6em;
+    vertical-align: super;
+    color: #9B284D;
+    margin-left: 3px;
+}
+sub {
+    font-size: 0.6em;
+    vertical-align: sub;
+    color: #9B284D;
+    margin-right: 3px;
+}
+
+/* Back to Top Link Styling */
+.back-to-top {
+    text-align: right;
+    margin-top: 40px;
+    font-size: 0.9em;
+}
+
+
+
+.map-links-container {
+    display: flex; 
+    justify-content: space-around; 
+    gap: 30px; 
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.map-link {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    text-decoration: none; 
+    padding: 10px; /* Reduced padding for image focus */
+    border: 1px solid #A29BFE; 
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    flex: 1; 
+}
+
+.map-link:hover {
+    background-color: rgba(231, 108, 155, 0.08); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.map-building-photo {
+    width: 100%; 
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth effects */
+}
+
+
+.map-label {
+    color: #9B284D; 
+    font-weight: bold;
+    font-size: 0.95em;
+    padding: 5px 0;
+}
+
+
+#map-links h3 {
+    text-align: center;
+    border-bottom: none;
+    margin-top: 50px;
+    margin-bottom: 0;
+}

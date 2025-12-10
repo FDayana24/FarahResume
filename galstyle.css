@@ -1,0 +1,238 @@
+body {
+    font-family: Georgia, Serif;
+    margin: 0;
+    padding: 0;
+    color: #333333; 
+    
+
+    background-image: url('bg6.jpg'); 
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+/*  NAVIGATION BAR */
+.main-header {
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px; 
+    overflow: hidden;
+}
+
+.nav-brand {
+    float: left;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #1F4E79; /* Deep Navy Blue Accent */
+    padding: 8px 10px;
+}
+
+.nav-item {
+    float: right;
+    display: block;
+    color: #444;
+    text-align: center;
+    padding: 8px 16px; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-item:hover, .active {
+    color: #4DB6AC; /* Vibrant Teal on hover */
+}
+
+
+/* MAIN CONTENT CARD */
+.main-content-wrapper {
+    min-height: calc(100vh - 120px); 
+    padding: 80px 20px 40px 20px;
+}
+
+.content-card {
+    max-width: 1000px; 
+    margin: 0 auto;
+    /* Near-white card */
+    background-color: rgba(255, 255, 255, 0.95); 
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.card-title {
+    color: #1F4E79; /* Deep Navy Blue Accent */
+    text-align: center;
+    font-size: 2.8em; 
+    border-bottom: 2px solid #FFD7A8; /* Soft Gold Border */
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.card-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+    font-size: 1.1em;
+}
+
+/* Headings for Family/Profile sections */
+h2 {
+    color: #1F4E79; /* Deep Navy Blue */
+    border-bottom: 1px solid #4DB6AC; /* Vibrant Teal Border */
+    padding-bottom: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #1F4E79; /* Deep Navy Blue Accent */
+    margin-top: 10px; 
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+
+/*  FOOTER STYLING */
+.footer-style {
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: #fff;
+    text-align: center;
+    padding: 20px; 
+    font-size: 0.8em; 
+}
+
+.highlight-text {
+    color: #FFD7A8; /* Soft Gold Highlight */
+}
+
+
+
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 10px;
+}
+
+.album-card {
+    display: block; 
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s;
+    border: 3px solid #FFD7A8; /* Soft Gold Border */
+}
+
+
+.album-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: #F5F8FF; /* Very light blue-grey background on hover */
+}
+
+.card-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.album-card h2 {
+    color: #1F4E79; /* Deep Navy Blue */
+    font-size: 1.6em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.album-card p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+/* Custom Icon Styling */
+.icon {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+    color: #FFD7A8; /* Soft Gold for the icon */
+    transition: color 0.3s;
+}
+
+/* Icon change on hover */
+.album-card:hover .icon {
+    color: #1F4E79; /* Deep Navy Blue icon on hover */
+}
+
+/* Tag/Count Styling */
+.tag {
+    display: inline-block;
+    background-color: #1F4E79; /* Deep Navy Blue */
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .content-card {
+        padding: 20px;
+    }
+    .album-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    .card-title {
+        font-size: 2em;
+    }
+}
+
+
+
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.photo-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    border: 1px solid #ddd;
+}
+
+.photo-item:hover {
+    transform: scale(1.03); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.photo-img, .photo-video {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    display: block;
+}
+
+.photo-caption {
+    padding: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+    background-color: #fcfcfc;
+    border-top: 1px solid #eee;
+}
