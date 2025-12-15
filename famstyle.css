@@ -223,9 +223,39 @@ h3 {
 
 
 
-/* Mobile: Stack columns vertically */
 
 @media (max-width: 768px) {
+    
+    .family-intro-header {
+        max-width: 90%; 
+        padding: 10px;
+    }
+
+    .family-group-photo {
+        width: 100%;    
+        height: auto;  
+    }
+
+    .nav-bar {
+        text-align: center;
+    }
+
+    .nav-brand, .nav-item {
+        float: none;   
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    
+    .content-card {
+        padding: 20px;  
+        margin: 10px;
+    }
+
+    .card-title {
+        font-size: 1.8em; 
+    }
 
     .profile-container, .profile-container.reverse-layout {
         flex-direction: column;
@@ -357,5 +387,6 @@ h3 {
     color: #555;
     margin-top: 2px; /* Slightly tighter spacing */
     font-size: 0.9em; /* Make the description slightly smaller */
+
 
 }
